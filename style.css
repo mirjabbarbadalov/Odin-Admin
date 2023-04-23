@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans", sans-serif;
+}
+
+svg {
+  width: 30px;
+  fill: #f0f9ff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.dashboard-sec {
+  grid-area: 1 / 1 / 6 / 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 30px;
+  background-color: #38bdf8;
+  color: #f0f9ff;
+  position: fixed;
+  height: 100vh;
+  width: 20vw;
+}
+
+.hc-sec,
+.sp-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-sec,
+.hc-item,
+.sp-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.dash-link {
+  text-decoration: none;
+  color: #f0f9ff;
+  transition: all 0.3s;
+  display: block;
+  padding: 3px;
+}
+
+.dash-link:hover,
+.dash-link:active {
+  color: #0c4a6e;
+  transform: scale(1.14);
+  border-left: 1px solid #0c4a6e;
+}
+
+.logo-icon {
+  width: 50px;
+}
+
+.black-icon {
+  fill: #020617;
+  width: 24px;
+}
+
+.header-sec {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.search-sec {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-left {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  gap: 10px;
+}
+
+.search-area {
+  width: 33vw;
+  padding: 5px;
+  border-radius: 16px;
+  border: none;
+  background-color: #e4edf6;
+  padding-left: 10px;
+}
+
+.search-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(./images/michael-baccin-XopauR-Nagk-unsplash.jpg);
+  background-size: cover;
+}
+
+.search-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+.upload-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  padding-bottom: 20px;
+}
+
+.upload-left {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.upload-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(./images/michael-baccin-XopauR-Nagk-unsplash.jpg);
+  background-size: cover;
+}
+
+.upload-info {
+  margin-left: 20px;
+}
+
+.upload-name {
+  font-size: 18px;
+}
+
+.upload-right {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  gap: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 34px;
+  background-color: #38bdf8;
+  color: #f0f9ff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #0c4a6e;
+  color: white;
+  cursor: pointer;
+}
+
+.proj-sec {
+  grid-area: 2 / 2 / 6 / 5;
+  background-color: rgba(226, 232, 240, 255);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 40px;
+  padding-bottom: 40px;
+}
+
+.proj-sec-name {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.tabs-sec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  width: 48%;
+  border-left: 10px solid rgb(56, 189, 248);
+  height: 180px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tab-link {
+  color: black;
+  text-decoration: none;
+}
+
+.tab-text {
+  font-size: 14px;
+  color: rgb(67, 67, 67);
+}
+
+.proj-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.proj-icons-link:hover,
+.proj-icons-link:active {
+  transform: scale(1.2);
+}
+
+.ann-trend-sec {
+  grid-area: 2 / 5 / 6 / 6;
+  background-color: rgba(226, 232, 240, 255);
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 20px;
+}
+
+.ann-sec {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ann-name {
+  font-size: 14px;
+}
+
+.ann-text {
+  font-size: 12px;
+}
+
+.trend-sec{
+  margin-top: 20px;
+}
